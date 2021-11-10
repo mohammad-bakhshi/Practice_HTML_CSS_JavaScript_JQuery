@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+      nav ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      nav li{
+        float: left;
+        width: 200px;
+        height: 40px;
+        line-height: 40px;
+        text-align: left;
+        background-color: orange;
+        position: relative;
+      }
+      nav li a{
+        width: 100%;
+        height: 100%;
+        display: block;
+        color: white;
+        text-decoration: none;
+      }
+      nav ul.sub{
+        position: absolute;
+        display: none;
+      }
+      nav ul.sub li ul.sub{
+        top:0;
+        left: 100px;
+      }
+    </style>
+</head>
+<body>
+  <nav>
+  <ul class="main">
+    <li>
+      <a href="#">Home</a>
+    </li>
+    <li id="pages">
+      <a href="#">Pages</a>
+    <ul class="sub" id="pagesNumber">
+      <li><a href="#">Page Number One</a></li>
+      <li><a href="#">Page Number Two</a></li>
+      <li><a href="#">Page Number Three</a></li>
+    </ul>
+  </li>
+    <li id="links">
+      <a href="#">Links</a>
+      <ul class="sub" id="linksNumber">
+        <li><a href="#">Link Number 1</a></li>
+        <li><a href="#">Link Number 2</a></li>
+        <li><a href="#">Link Number 3</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    <script src="my_jquery_functions.js"></script>
+</body>
+</html>
